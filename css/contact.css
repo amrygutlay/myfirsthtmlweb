@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/background.jpg"); 
+    background-size: cover;
+    background-position: center; 
+}
+
+.header-main {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 30px;
+    background-color: #005b96;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.header-main-home {
+    color: #fff;
+    width: 100px;
+    height: 100%;
+    background-color: #6497b1;
+    border-right: 0.5px solid #b3cde0;
+    border-left: 1px solid #b3cde0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.header-main-resume {
+    color: #fff;
+    width: 120px;
+    height: 100%;
+    background-color: #6497b1;
+    border-right: 0.5px solid #b3cde0;
+    border-left: 1px solid #b3cde0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.header-main-contact {
+    color: #fff;
+    width: 120px;
+    height: 100%;
+    background-color: #fff;
+    border-right: 0.5px solid #b3cde0;
+    border-left: 1px solid #b3cde0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+a {
+    color: #b3cde0; /* Set the color for normal links */
+}
+
+a:hover {
+    color: #005b96; 
+}
+
+a:visited {
+    color: #fff;
+}
+
+.titlecontact h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color:#6497b1;
+    margin: 0; /* Remove default body margin */
+    min-height: 15vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.photo img {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+  
+.contact {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.phone {
+    max-width: 400px;
+    overflow: hidden;
+    font-weight: 500px;
+}
+
+.phone input {
+    display: none;
+}
+
+.phone label {
+    position: relative;
+    font-weight: 600;
+    background-color: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #005b96;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.phone label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.phone input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.phone-text {
+    text-align: center;
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin-left: auto;
+}
+
+.phone input:checked ~ .phone-text {
+    max-height: 300px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+
+.phone-text p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.phone-text p img {
+    height: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.fb {
+    max-width: 400px;
+    overflow: hidden;
+    font-weight: 500px;
+}
+
+.fb input {
+    display: none;
+}
+
+.fb label {
+    position: relative;
+    font-weight: 600;
+    background-color: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #005b96;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.fb label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.fb input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.fb-text {
+    text-align: center;
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+
+.fb input:checked ~ .fb-text {
+    max-height: 300px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+
+.fb-text p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fb-text p img {
+    height: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.fb-text p a {
+    color: black;
+}
+
+.ig {
+    max-width: 400px;
+    overflow: hidden;
+    font-weight: 500px;
+}
+
+.ig input {
+    display: none;
+}
+
+.ig label {
+    position: relative;
+    font-weight: 600;
+    background-color: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #005b96;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.ig label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.ig input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.ig-text {
+    text-align: center;
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+
+.ig input:checked ~ .ig-text {
+    max-height: 300px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+
+.ig-text p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ig-text p img {
+    height: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+.ig-text p a {
+    color: black;
+}
+
+.email {
+    max-width: 400px;
+    overflow: hidden;
+    font-weight: 500px;
+}
+
+.email input {
+    display: none;
+}
+
+.email label {
+    position: relative;
+    font-weight: 600;
+    background-color: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #005b96;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.email label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.email input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.email-text {
+    text-align: center;
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+
+.email input:checked ~ .email-text {
+    max-height: 300px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+
+.email-text p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.email-text p img {
+    height: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.email-text p a {
+    color: black;
+}
+
+@media only screen and (min-width: 400px) {
+
+    .titlecontact h1 {
+        min-height: 10vh; 
+        font-size: 20px;
+    }
+
+    .photo img {
+        border-radius: 75px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact {
+        width: 380px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .phone {
+        max-width: 80px;
+    }
+
+    .phone label {
+        min-height: 5vh;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .phone-text p {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .phone-text p img {
+        height: 10px;
+        margin-top: 10px;
+    }
+
+    .fb {
+        max-width: 100px;
+    }
+
+    .fb label {
+        min-height: 5vh;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .fb-text p {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .fb-text p img {
+        height: 10px;
+        margin-top: 10px;
+    }
+    
+    .ig {
+        max-width: 100px;
+    }
+    
+    .ig label {
+        min-height: 5vh;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .ig-text p {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .ig-text p img {
+        height: 10px;
+        margin-top: 10px;
+    }
+
+    .email {
+        max-width: 150px
+    }
+    
+    .email label {
+        min-height: 5vh;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .email-text p {
+        font-size: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .email-text p img {
+        height: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .titlecontact h1 {
+        min-height: 15vh; 
+        font-size: 30px;
+    }
+
+    .photo img {
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .contact {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .phone {
+        max-width: 250px;
+    }
+
+    .phone label {
+        min-height: 5vh;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .phone-text p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .phone-text p img {
+        height: 20px;
+        margin-top: 20px;
+    }
+
+    .fb {
+        max-width: 300px;
+    }
+
+    .fb label {
+        min-height: 5vh;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .fb-text p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .fb-text p img {
+        height: 20px;
+        margin-top: 20px;
+    }
+    
+    .ig {
+        max-width: 300px;
+    }
+    
+    .ig label {
+        min-height: 5vh;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .ig-text p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .ig-text p img {
+        height: 20px;
+        margin-top: 20px;
+    }
+
+    .email {
+        max-width: 200px
+    }
+    
+    .email label {
+        min-height: 5vh;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .email-text p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .email-text p img {
+        height: 20px;
+        margin-top: 20px;
+    }
+}

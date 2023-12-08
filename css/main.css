@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/background.jpg"); 
+    background-size: contain;
+    background-position: center; 
+}
+
+.header-main {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 30px;
+    background-color: #005b96;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.header-main-home {
+    color: #fff;
+    width: 100px;
+    height: 100%;
+    background-color: #fff;
+    border-right: 0.5px solid #b3cde0;
+    border-left: 1px solid #b3cde0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.header-main-resume {
+    color: #fff;
+    width: 120px;
+    height: 100%;
+    background-color: #6497b1;
+    border-right: 0.5px solid #b3cde0;
+    border-left: 1px solid #b3cde0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.header-main-contact {
+    color: #fff;
+    width: 120px;
+    height: 100%;
+    background-color: #6497b1;
+    border-right: 0.5px solid #b3cde0;
+    border-left: 1px solid #b3cde0;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+a {
+    color: #b3cde0; /* Set the color for normal links */
+}
+
+a:hover {
+    color: #005b96; 
+}
+
+a:visited {
+    color: #fff;
+}
+
+.titlecv h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color:#6497b1;
+    margin: 0; /* Remove default body margin */
+    min-height: 15vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+img {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.name {
+    color: #011f4b;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.prog {
+    color: #011f4b;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.about {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.collapsible {
+    max-width: 400px;
+    overflow: hidden;
+    font-weight: 500px;
+}
+
+.collapsible input {
+    display: none;
+}
+
+.collapsible label {
+    position: relative;
+    font-weight: 600;
+    background-color: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    color: #005b96;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked + label:after {
+    transform: rotate(90deg);
+}
+
+.collapsible-text {
+    text-align: center;
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible input:checked ~ .collapsible-text {
+    max-height: 300px;
+    padding-bottom: 80px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .1), 0 4px 11px 0 rgba(0, 0, 0, .08);
+    opacity: 1;
+    top: 0;
+}
+
+.collapsible-text h2 {
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: #005b96;
+}
+
+.collapsible-text p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (min-width: 400px) {
+
+    .titlecv h1 {
+        min-height: 10vh; 
+        font-size: 20px;
+    }
+
+    img {
+        border-radius: 75px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .about {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .collapsible label {
+        min-height: 1vh;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .collapsible-text h2 {
+        font-size: 15px;
+    }
+
+    .collapsible input:checked ~ .collapsible-text {
+        padding-bottom: 20px;
+        font-size: 10px;
+    }
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .titlecv h1 {
+        min-height: 15vh; 
+        font-size: 30px;
+    }
+
+    .myphoto {
+        border-radius: 100px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .about {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+    }
+
+    .collapsible {
+        max-width: 500px;
+        overflow: hidden;
+        font-weight: 500px;
+    }
+
+    .collapsible label {
+        min-height: 5vh;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .collapsible-text h2 {
+        font-size: 20px;
+    }
+
+    .collapsible input:checked ~ .collapsible-text {
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+}
